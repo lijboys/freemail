@@ -6,16 +6,12 @@ compatibility_date = "2024-01-01"
 # D1 数据库绑定
 [[d1_databases]]
 binding = "TEMP_MAIL_DB"
-database_name = "freemail" #你的d1数据库名称
-database_id = "0cd4d57b-4211-4151-9552-a262d788a187" # 你的database_id
+database_name = "maill_free_db" #你的d1数据库名称
+database_id = "c82663ac-62b6-4ba6-be81-cbe297f2a3dd" # 你的database_id
 
 # 环境变量
 [vars]
-MAIL_DOMAIN = "noum.me" #可以多个 以英文逗号分隔
-ADMIN_NAME = "admin" # 超级管理员用户名 （不配名称 默认为admin）
-ADMIN_PASSWORD = "qwer1234" # 超级管理员密码
-JWT_TOKEN = "mqu6thp.phf8NEN.ybm" # 随便一串字符串
-# RESEND_API_KEY  # 发送邮件需要配置
+
 
 # 静态资源目录（Workers + Assets）
 [assets]
@@ -27,6 +23,3 @@ binding = "ASSETS"
 # wrangler.toml (wrangler v3.88.0^) 日志服务
 # [observability.logs]
 # enabled = true
-
-
-
